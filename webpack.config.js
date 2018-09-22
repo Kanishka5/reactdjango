@@ -3,6 +3,9 @@ var webpack = require('webpack');
 var BundleTracker = require('webpack-bundle-tracker');
 
 module.exports = {
+
+  performance: { hints: false },
+
   context: __dirname,
 
   entry: './reactdj/polls/static/js/index',
@@ -12,6 +15,9 @@ module.exports = {
       filename: "[name]-[hash].js",
   },
 
+
+
+  
   plugins: [
     new BundleTracker({filename: './reactdj/webpack-stats.json'}),
   ],

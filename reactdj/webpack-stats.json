@@ -1,1 +1,1 @@
-{"status":"done","chunks":{"main":[{"name":"main-4d3b285ba4c763c007a6.js","path":"/home/kenny/Desktop/myproject/reactdj/polls/static/bundles/main-4d3b285ba4c763c007a6.js"}]}}
+{"status":"done","chunks":{"main":[{"name":"main-c5743b9718a9e1bbc7e7.js","path":"/home/kenny/Desktop/myproject/reactdj/polls/static/bundles/main-c5743b9718a9e1bbc7e7.js"}]},"error":"ModuleNotFoundError","message":"Module not found: Error: Can't resolve 'ScrollMagic' in '/home/kenny/Desktop/myproject/node_modules/scrollmagic/scrollmagic/uncompressed/plugins'"}

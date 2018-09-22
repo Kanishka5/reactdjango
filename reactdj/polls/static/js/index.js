@@ -3,5 +3,6 @@ import ReactDOM from 'react-dom'
 import Comps from '../components/comps'
 
 
-ReactDOM.render(<Comps/>, document.getElementById('react'));
+
+ReactDOM.render(<Comps/>, document.getElementById('react2'));
 registerServiceWorker();

@@ -1,23 +1,25 @@
-import React, { Component } from 'react';
-import {Grid, Row, Col} from 'react-bootstrap';
+import React from 'react';
+import Bounce from 'react-reveal/Bounce';
+import ReactDOM from 'react-dom'
 
-class About extends Component{
-  render(){
-    return(
+var divStyle = {
+  padding: "20px",
+  margin: "20px",
+  fontSize: "20px",
+  textAlign: "center"
+};
+
+class About extends React.Component {
+  render() {
+    return (
+      <div id="scene" style={divStyle}>
+        <Bounce right cascade>
           <div>
-			<Grid>
-			  <Row className="show-grid">
-			    <Col xs={12} md={8}>
-			    <h2>Naruto Shippūden</h2>
-			      <p>More than two years have passed since the most recent adventures in the Hidden Leaf Village, ample time for ninja wannabe Naruto Uzumaki to have developed skills worthy of recognition and respect. The hyperactive youngster has trained extensively with Jiraiya-sama and returned to Konoha to reunite with friends and, perhaps, partake in more pranks than schoolwork. But Naruto is more determined than ever to become the greatest ninja, and his hard-earned improvements are put to the ultimate test against newer, stronger enemies. "Naruto: Shippuden" is adapted from Part II of the "Naruto" comic book series by Masashi Kishimoto.</p>
-			    </Col>
-			  </Row>
-			</Grid>
+						<h5>CCA, Centre for Cognitive Activities, <br/>is the focal point where convergence of all technical and<br/> scientific endeavours of the students materialises. As the technical gymkhana of the institute,<br/> this club is the revolution which bridges the gap between knowledge <br/>and application. Bulk of the extracurricular activities held in the<br/> college all the year round are organised by the CCA , with the objective<br/> of probing the dark recesses of human mind so that the grey cells are stimulated<br/> to create , conceptualise and evolve, triggering a rebellion of the new age mind against baseless conventions and meek acceptance.</h5>
           </div>
+        </Bounce>
+      </div>
     );
-
   }
 }
-
-
-  export default About;
+export default About;

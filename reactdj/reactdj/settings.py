@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'webpack_loader',
     'home',
     'polls',
+    'animation',
 ]
 
 

@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
 import Nav1 from './nav';
 import Carousal1 from './carousal';
-import About from './about';
 import Clans from './clans';
 import Hokage from './hokage';
+import HoverComp from './anim.js';
+import Move from './moving.js';
+import DashboardCard from './flipbox.js';
+import FooterPage from './footer';
+import NavbarFeatures from './navbar2';
+import MultiCarouselPage from './carousel1';
+import LightboxPage from './lightbox';
+import About from './about';
+import Anim1 from './anim1';
+import Landing from './landing';
+
 
 class Comps extends Component {
   render() {
     return (
         <div >
-        	<Carousal1/>
-          <Nav1/>
+          <Landing/>
           <About/>
-          <Clans/>
-          <Hokage/>
+          <FooterPage/>
         </div>
     );
   }
