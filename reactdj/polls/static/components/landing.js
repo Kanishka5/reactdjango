@@ -1,15 +1,14 @@
 
 import React, { Component } from 'react';
-import * as ScrollMagic from 'scrollmagic'
-import {TweenMax,Linear} from 'gsap';
+import TweenMax from 'gsap';
+import ScrollMagic from './scrollmagic.js';
 
 class Landing extends Component {
     componentDidMount() {
         var controller= new ScrollMagic.Controller();
-        var tween = TweenMax.to(".logo", 3, {scale:0.4, ease: Linear.easeNone});
+        var tween = TweenMax.to(".img", 1, {backgroundColor:"black", scale:0.4, ease: Linear.easeNone});
 
         var scene = new ScrollMagic.Scene({
-            triggerElement:'.logo',
             offset:50 ,
             duration: 300,
             })
@@ -19,10 +18,9 @@ class Landing extends Component {
 
 
                 var controller= new ScrollMagic.Controller();
-                var tween = TweenMax.to(".center1", 3, {scale:0, ease: Linear.easeNone});
+                var tween = TweenMax.to(".center1", 1, {scale:0, ease: Linear.easeNone});
         
                 var scene = new ScrollMagic.Scene({
-                    triggerElement:'.logo',
                     offset:50 ,
                     duration: 300,
                     })
@@ -31,10 +29,9 @@ class Landing extends Component {
                                                 
                                             
                         var controller= new ScrollMagic.Controller();
-                        var tween = TweenMax.to(".center", 3, {scale:4, ease: Linear.easeNone});
+                        var tween = TweenMax.to(".center", 1, {color:"red", scale:4, ease: Linear.easeNone});
                 
                         var scene = new ScrollMagic.Scene({
-                            triggerElement:'.logo',
                             offset:50 ,
                             duration: 300,
                             })
@@ -99,7 +96,7 @@ class Landing extends Component {
         };
 
         return (
-            <div className="logo" style={style4} >
+            <div className="img" style={style4} >
                 <img src="https://www.ccanitd.in/images/background/LandingImage.jpg"/>
                 <div className="center" style={style33}><b>C</b></div>
                 <div className="center1"  style={style3}>enter for</div>
