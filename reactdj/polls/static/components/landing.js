@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import TweenMax from 'gsap';
 import ScrollMagic from './scrollmagic.js';
-import SmoothScrollbar from 'smooth-scrollbar';
+import SmoothScroll from 'smooth-scroll';
 
 class Landing extends Component {
     componentDidMount() {
@@ -40,12 +40,12 @@ class Landing extends Component {
                                 .setTween(tween)
                                 .addTo(controller);
 
-                                var scrollbar = SmoothScrollbar.init(document.querySelector('.img'))
 
-                                // add listener to refresh the scene manually
-                                scrollbar.addListener(() => {
-                                  scene.refresh()
-                                })
+
+                                var scroll = new SmoothScroll();
+                                var anchor = document.querySelector('.image');
+                                scroll.animateScroll(anchor);
+
     };
 
 
@@ -121,7 +121,7 @@ class Landing extends Component {
 
         return (
             <div className="img" style={style4} >
-                <img style={style5} src="https://www.ccanitd.in/images/background/LandingImage.jpg"/>
+                <img className="image" style={style5} src="https://www.ccanitd.in/images/background/LandingImage.jpg"/>
                 <div className="center" style={style33}><b>C</b></div>
                 <div className="center1"  style={style3}><b>enter fo</b>r</div>
                 <div className="center"  style={style22}><b>C</b></div>
