@@ -11,7 +11,7 @@ import NavbarFeatures from './navbar2';
 import MultiCarouselPage from './carousel1';
 import LightboxPage from './lightbox';
 import About from './about';
-import Anim1 from './anim1';
+
 import Landing from './landing';
 
 

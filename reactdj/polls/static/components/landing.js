@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import TweenMax from 'gsap';
+import TweenMax,{Linear} from 'gsap';
 import ScrollMagic from './scrollmagic.js';
 import SmoothScroll from 'smooth-scroll';
 
@@ -10,7 +10,6 @@ class Landing extends Component {
         var tween = TweenMax.to(".img", 1, {backgroundColor:"black", scale:0.8, ease: Linear.easeNone});
 
         var scene = new ScrollMagic.Scene({
-            offset:50 ,
             duration: 300,
             })
                 .setTween(tween)
@@ -31,7 +30,7 @@ class Landing extends Component {
                                                 
                                             
                         var controller= new ScrollMagic.Controller();
-                        var tween = TweenMax.to(".center", 1, {color:"red", scale:4, ease: Linear.easeNone});
+                        var tween = TweenMax.to(".center", 1, { scale:4,color:"red",x:80,ease: Linear.easeNone});
                 
                         var scene = new ScrollMagic.Scene({
                             offset:50 ,
@@ -53,60 +52,41 @@ class Landing extends Component {
     render() {
 
         const style2={
-            position: 'absolute',
-            top: '50.5%',
-            left: '51%',
-            transform: 'translate(-50%, -50%)',
+            float:'left',
             fontSize:'50px',
         };
 
         const style22={
-            position: 'absolute',
-            top: '50.5%',
-            left: '43.5%',
-            transform: 'translate(-50%, -50%)',
+            float:'left',
             fontSize:'50px',
         };
         
         const style4={
-            float:'left',
             textAlign:'center',
             position:'relative',
             color:'	#AFEEEE',
         };
 
         const style3={
-            position: 'absolute',
-            top: '50%',
-            left: '35%',
-            transform: 'translate(-50%, -45%)',
+            float:'left',
             fontSize:'50px',
                 
         };
 
         const style33={
-            position: 'absolute',
-            top: '50%',
-            left: '27%',
-            transform: 'translate(-50%, -45%)',
+            float:'left',
             fontSize:'50px',
                 
         };
 
         const style1={
-            position: 'absolute',
-            top: '50.8%',
-            left: '67%',
-            transform: 'translate(-50%, -55%)',
+            float:'left',
             fontSize:'50px',
                 
         };
 
         const style11={
-            position: 'absolute',
-            top: '50.8%',
-            left: '60%',
-            transform: 'translate(-50%, -55%)',
+            float:'left',
             fontSize:'50px',
                 
         };
@@ -118,16 +98,28 @@ class Landing extends Component {
             margin:'0px',
         };
 
+        const styletext={
+                position:'absolute',
+                top:'50%',
+                left:'50%',
+                transform:'translate(-50%,-50%)',
+        }
+
 
         return (
             <div className="img" style={style4} >
                 <img className="image" style={style5} src="https://www.ccanitd.in/images/background/LandingImage.jpg"/>
-                <div className="center" style={style33}><b>C</b></div>
-                <div className="center1"  style={style3}><b>enter fo</b>r</div>
-                <div className="center"  style={style22}><b>C</b></div>
-                <div className="center1"  style={style2}><b>ognitive</b></div>
-                <div className="center"  style={style11}><b>A</b></div>
-                <div className="center1"  style={style1}><b>ctivites</b></div>
+                <div classname="text" style={styletext}>
+                    <div className="center" style={style33}><b>C</b></div>
+                    <div className="center1"  style={style3}><b>enter fo</b>r</div>
+                    <div className="center"  style={style22}><b>C</b></div>
+                    <div className="center1"  style={style2}><b>ognitive</b></div>
+                    <div style={style1}>
+                    <div className="center"  style={style11}><b>A</b></div>
+                    <div className="center1"  style={style1}><b>ctivites</b></div>
+                    </div>
+
+                </div>
             </div>
         );
     }
