@@ -11,17 +11,18 @@ import NavbarFeatures from './navbar2';
 import MultiCarouselPage from './carousel1';
 import LightboxPage from './lightbox';
 import About from './about';
-
+import Hover from './hover';
 import Landing from './landing';
-
+import Anim1 from './anim1';
+import Grid from './grid';
+import Hover1 from './Hover_cnct';
 
 class Comps extends Component {
   render() {
     return (
         <div >
           <Landing/>
-          <About/>
-          <FooterPage/>
+          <Hover1/>
         </div>
     );
   }

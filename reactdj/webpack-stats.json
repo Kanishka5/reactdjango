@@ -1,1 +1,1 @@
-{"status":"done","error":"ModuleParseError","message":"Module parse failed: Unexpected token (2:0)\nYou may need an appropriate loader to handle this file type.\n| \n> .container{\n|             display: table;\n|             margin-left: 100px;","chunks":{"main":[{"name":"main-bc41f3a3dd05890f7b0e.js","path":"/home/kenny/Desktop/myproject/reactdj/polls/static/bundles/main-bc41f3a3dd05890f7b0e.js"}]}}
+{"status":"done","chunks":{"main":[{"name":"main-0e53f0edf28bb23bdf58.js","path":"/home/kenny/Desktop/myproject/reactdj/polls/static/bundles/main-0e53f0edf28bb23bdf58.js"}]}}

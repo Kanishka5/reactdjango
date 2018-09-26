@@ -10,7 +10,7 @@ class Landing extends Component {
         var tween = TweenMax.to(".img", 1, {backgroundColor:"black", scale:0.8, ease: Linear.easeNone});
 
         var scene = new ScrollMagic.Scene({
-            duration: 300,
+            duration: 520,
             })
                 .setTween(tween)
                 .setPin(".img")
@@ -23,18 +23,18 @@ class Landing extends Component {
         
                 var scene = new ScrollMagic.Scene({
                     offset:50 ,
-                    duration: 300,
+                    duration: 520,
                     })
                         .setTween(tween)
                         .addTo(controller);  
                                                 
                                             
                         var controller= new ScrollMagic.Controller();
-                        var tween = TweenMax.to(".center", 1, { scale:4,color:"red",x:80,ease: Linear.easeNone});
+                        var tween = TweenMax.to(".center", 1, { scale:4,color:"white",x:80,ease: Linear.easeNone});
                 
                         var scene = new ScrollMagic.Scene({
                             offset:50 ,
-                            duration: 300,
+                            duration: 520,
                             })
                                 .setTween(tween)
                                 .addTo(controller);
