@@ -30,7 +30,7 @@ class Landing extends Component {
                                                 
                                             
                         var controller= new ScrollMagic.Controller();
-                        var tween = TweenMax.to(".center", 1, { scale:4,color:"white",x:80,ease: Linear.easeNone});
+                        var tween = TweenMax.to(".center", 1, { scale:4,color:"white",x:55,ease: Linear.easeNone});
                 
                         var scene = new ScrollMagic.Scene({
                             offset:50 ,
@@ -53,12 +53,13 @@ class Landing extends Component {
 
         const style2={
             float:'left',
-            fontSize:'50px',
+            fontSize:'3vw',
+            paddingRight:'10px',
         };
 
         const style22={
             float:'left',
-            fontSize:'50px',
+            fontSize:'3vw',
         };
         
         const style4={
@@ -69,25 +70,26 @@ class Landing extends Component {
 
         const style3={
             float:'left',
-            fontSize:'50px',
+            fontSize:'3vw',
+            paddingRight:'10px',
                 
         };
 
         const style33={
             float:'left',
-            fontSize:'50px',
+            fontSize:'3vw',
                 
         };
 
         const style1={
             float:'left',
-            fontSize:'50px',
+            fontSize:'3vw',
                 
         };
 
         const style11={
             float:'left',
-            fontSize:'50px',
+            fontSize:'3vw',
                 
         };
 
@@ -114,10 +116,9 @@ class Landing extends Component {
                     <div className="center1"  style={style3}><b>enter fo</b>r</div>
                     <div className="center"  style={style22}><b>C</b></div>
                     <div className="center1"  style={style2}><b>ognitive</b></div>
-                    <div style={style1}>
                     <div className="center"  style={style11}><b>A</b></div>
                     <div className="center1"  style={style1}><b>ctivites</b></div>
-                    </div>
+                    
 
                 </div>
             </div>

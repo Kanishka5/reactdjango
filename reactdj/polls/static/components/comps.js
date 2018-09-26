@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Nav1 from './nav';
 import Carousal1 from './carousal';
-import Clans from './clans';
 import Hokage from './hokage';
 import HoverComp from './anim.js';
 import Move from './moving.js';
@@ -16,6 +15,7 @@ import Landing from './landing';
 import Anim1 from './anim1';
 import Grid from './grid';
 import Hover1 from './Hover_cnct';
+import Hovercell from './cells_hover';
 
 class Comps extends Component {
   render() {
@@ -23,6 +23,7 @@ class Comps extends Component {
         <div >
           <Landing/>
           <Hover1/>
+          <Hovercell/>
         </div>
     );
   }
